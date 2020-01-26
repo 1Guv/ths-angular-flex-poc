@@ -1,6 +1,26 @@
-<h1>Angular Flex</h1>
+<div fxLayout="column" fxLayoutAlign="center center" fxShow.md="true" fxShow="false" class="header-float">
+  <h1>Floating title when less than md</h1>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button>Form 1</button>
+    <button>Form 2</button>
+  </div>
+</div>
+
+<div fxLayout="column" fxLayoutAlign="center center" fxShow.xs="true" fxShow="false" class="footer-float">
+  <div fxFlexFill>
+    <h1>Floating buttons xs</h1>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <button>Form 1</button>
+      <button>Form 2</button>
+    </div>
+  </div>
+</div>
 
 <div fxLayout="row" fxLayoutAlign="center center">
+  <h1>Angular Flex</h1>
+</div>
+
+<!-- <div fxLayout="row" fxLayoutAlign="center center">
   <div fxFlex="80" class="box">1</div>
   <div fxFlex="20" class="box-1">2</div>
 </div>
@@ -17,43 +37,43 @@
 <div fxLayout="row" fxLayout.xs="column" class="w-800">
   <div fxFlex="50" fxFlexOffset="20" class="box">6</div>
   <div fxFlex="50" class="box-1">7</div>
-</div>
+</div> -->
 
 <br>
 
-<div fxLayout="row" fxLayout.xs="column" class="w-800" fxLayoutGap="10px">
+<div fxLayout="row" fxLayout.lt-sm="column" class="w-800" fxLayoutGap="10px">
   <div fxFlex="50" class="box">8</div>
   <div fxFlex="50" class="box-1">9</div>
 </div>
 
 <br>
 
-<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="w-800">
+<div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="w-800">
   <div>
     <img class="img-flex" src="../assets/harley-davidson-52UeZUkp3Hs-unsplash.jpg">
   </div>
 
-  <div fxFlexAlign="start">
+  <div class="text-container" fxFlexAlign="start" fxFlexAlign.lt-lg="center">
     <h3>Title 1</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse assumenda, exercitationem, explicabo nulla, est ea consequuntur corrupti quo in accusamus. Odio repellat excepturi quod, voluptate cumque quo nemo doloremque?</p>
   </div>
 
 </div>
 
-<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="w-800">
+<div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="w-800">
 
-  <div fxFlexAlign="start" fxFlexOrder.xs="2">
+  <div fxFlexAlign="start" fxFlexOrder.lt-lg="2">
     <h3>Title 2</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse assumenda, exercitationem, explicabo nulla, est ea consequuntur corrupti quo in accusamus. Odio repellat excepturi quod, voluptate cumque quo nemo doloremque?</p>
   </div>
 
-  <div fxFlexOrder.xs="1">
+  <div fxFlexOrder.ls-lg="1">
     <img class="img-flex" src="../assets/ramona-kudure-vOqzskOBmwE-unsplash.jpg">
   </div>
 
 </div>
 
-<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="w-800">
+<div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="w-800">
   <div>
     <img class="img-flex" src="../assets/harley-davidson-52UeZUkp3Hs-unsplash.jpg">
   </div>
@@ -64,3 +84,4 @@
   </div>
 
 </div>
+
